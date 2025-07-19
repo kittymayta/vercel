@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'; 
 import { useRouter } from "next/router";
-import ModalInterpretacion from '../ISOS_User/components/Modal_interpretacionSubitem_Us';
-import ModalEjemplos from '../ISOS_User/components/Modal_ejemplos';
+import ModalInterpretacion from '../../components_isos_user/Modal_interpretacionSubitem_Us';
+import ModalEjemplos from '../../components_isos_user/Modal_ejemplos';
 import {Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow, } from "@/components/custom/table"
 import {Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious, } from "@/components/ui/pagination"
 import useCRUD from '@/hooks/useCrud';

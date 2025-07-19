@@ -118,4 +118,4 @@ export const ModalProcesosCoordinador = ({codigoEntidad, fetchProcesos}) => {
     </>
   );
 };
-
+export default ModalProcesosCoordinador;

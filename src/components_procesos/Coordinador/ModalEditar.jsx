@@ -118,3 +118,4 @@ export const ModalEditarProceso = ({procesoEditar, fetchProcesos}) => {
     </>
   );
 };
+export default ModalEditarProceso;

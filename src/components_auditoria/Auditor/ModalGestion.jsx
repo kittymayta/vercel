@@ -8,7 +8,7 @@ import { ButtonBlue } from "@/components/custom/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import CardMicro from './Card';
 import CrearMicroAuditoria from './creacion';
-import VerMicro from './verMicro';
+import VerMicro from '../../pages/Auditoria/Auditor/components/verMicro';
 import {
     Dialog,
     DialogContent,

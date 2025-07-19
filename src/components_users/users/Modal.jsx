@@ -285,4 +285,5 @@ export function Modal({fetchUsuarios}) {
     </Dialog>
     </>
   );
-  }
+  };
+export default Modal;

@@ -1,8 +1,8 @@
-import Carrusel from "../ISOS_User/components/carrusel";
+import Carrusel from "../../components_isos_user/carrusel";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import useCRUD from "@/hooks/useCrud";
-import Image from "../ISOS_Admin/components/image";
+import Image from "../../components_isos_admin/image";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious,} from "@/components/ui/carousel"
 
 

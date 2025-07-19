@@ -1,4 +1,4 @@
-import { NuevaSolicitud } from "./components/ModalShdcn";
+import { NuevaSolicitud } from "../../../components_auditoria/Usuario/ModalShdcn";
 import { useState, useEffect } from "react";
 import useCRUD from '@/hooks/useCrud';
 import {

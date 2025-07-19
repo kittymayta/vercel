@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from "next/router";
 import {Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow, } from "@/components/custom/table"
 import {Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious, } from "@/components/ui/pagination"
-import ModalInterpretacion from '../ISOS_Admin/components/Modal_interpretacion';
-import ModalContenidoSubitem from '../ISOS_Admin/components/Modal_contenidoSubitem';
-import ModalExample from '../ISOS_Admin/components/Modal_example';
-import ModalDocumentacionSubitem from '../ISOS_Admin/components/Modal_documentacionSubitem';
-import ModalEditarItem from '../ISOS_Admin/components/Modal_editar_item';
-import ModalEditarSubItem from '../ISOS_Admin/components/Modal_editar_subitem';
-import ModalNuevoItem from '../ISOS_Admin/components/Modal_nuevo_item';
-import ModalNuevoSubItem from '../ISOS_Admin/components/Modal_nuevo_subitem';
+import ModalInterpretacion from '../../components_isos_admin/Modal_interpretacion';
+import ModalContenidoSubitem from '../../components_isos_admin/Modal_contenidoSubitem';
+import ModalExample from '../../components_isos_admin/Modal_example';
+import ModalDocumentacionSubitem from '../../components_isos_admin/Modal_documentacionSubitem';
+import ModalEditarItem from '../../components_isos_admin/Modal_editar_item';
+import ModalEditarSubItem from '../../components_isos_admin/Modal_editar_subitem';
+import ModalNuevoItem from '../../components_isos_admin/Modal_nuevo_item';
+import ModalNuevoSubItem from '../../components_isos_admin/Modal_nuevo_subitem';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger, } from "@/components/ui/tooltip"
 import useCRUD from '@/hooks/useCrud';
 import { toast } from 'sonner';

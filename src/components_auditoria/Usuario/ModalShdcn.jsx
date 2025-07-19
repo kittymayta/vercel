@@ -105,4 +105,5 @@ export function NuevaSolicitud({user, fetchSolicitudes}) {
           </DialogContent>
         </Dialog>
   )
-}
+};
+export default NuevaSolicitud;

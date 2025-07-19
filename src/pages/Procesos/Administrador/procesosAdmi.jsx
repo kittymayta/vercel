@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { ModalAprobar } from './components/ModalAprobar';
-import { ModalDesaprobar } from './components/ModalDesaprobar';
+import { ModalAprobar } from '../../../components_procesos/Administrador/ModalAprobar';
+import { ModalDesaprobar } from '../../../components_procesos/Administrador/ModalDesaprobar';
 import {Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow, } from "@/components/custom/table"
 import {Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious, } from "@/components/ui/pagination"
 import useCRUD from '@/hooks/useCrud';
@@ -13,7 +13,7 @@ import {
     SelectTrigger,
     SelectValue,
   } from '@/components/ui/select';
-import {ModalComentario} from "./components/Comentario"
+import {ModalComentario} from "../../../components_procesos/Administrador/Comentario"
 
 const ProcesosAdministrador = () => {
   const { get, post, put, eliminar } = useCRUD();

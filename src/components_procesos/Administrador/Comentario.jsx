@@ -32,7 +32,7 @@ export const ModalComentario = ({proceso}) => {
 
           <div className="">
             <label className="block mb-2 text-sm font-medium text-gray-900">
-                El administrador ingreso el siguiente comentario motivo por el cual se desaprobo el proceso.
+                Usted desaprobo este proceso y envio el siguiente comentario.
             </label>
             <textarea
                 placeholder="Ingrese una descripción del proceso"
@@ -45,3 +45,4 @@ export const ModalComentario = ({proceso}) => {
     </>
   );
 };
+export default ModalComentario;

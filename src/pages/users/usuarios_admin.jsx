@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import {Modal} from './components/Modal';
-import ModalEditar from './components/ModalEditar';
+import {Modal} from '../../components_users/users/Modal';
+import ModalEditar from '../../components_users/users/ModalEditar';
 import useCRUD from '@/hooks/useCrud';
 import { toast } from "sonner"
 import {

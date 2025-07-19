@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
-import ModalGestion from "./components/ModalGestion";
+import ModalGestion from "../../../components_auditoria/Auditor/ModalGestion";
 import {Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow, } from "@/components/custom/table"
 import {Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious, } from "@/components/ui/pagination"
 import useCRUD from '@/hooks/useCrud';

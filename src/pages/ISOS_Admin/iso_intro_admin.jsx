@@ -1,13 +1,13 @@
 import { useState, useEffect, use } from "react";
 import { useRouter } from "next/router";
-import Titulo from "../ISOS_Admin/components/titulo_intro";
-import Descripcion from "../ISOS_Admin/components/descripcion_intro";
-import Video from "../ISOS_Admin/components/video_intro";
-import ImagenCarru from "../ISOS_Admin/components/imagen_intro";
-import Image from "./components/image";
+import Titulo from "../../components_isos_admin/titulo_intro";
+import Descripcion from "../../components_isos_admin/descripcion_intro";
+import Video from "../../components_isos_admin/video_intro";
+import ImagenCarru from "../../components_isos_admin/imagen_intro";
+import Image from "../../components_isos_admin/image";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious,} from "@/components/ui/carousel"
 import useCRUD from "@/hooks/useCrud";
-import ModalNuevaImagen from "./components/NuevaImagen";
+import ModalNuevaImagen from "../../components_isos_admin/NuevaImagen";
 
 const Iso9000IntroAdmin = () => { 
   const router = useRouter(); 

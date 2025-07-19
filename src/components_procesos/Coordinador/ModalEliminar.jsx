@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogFooter,
@@ -9,54 +10,48 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { ButtonBlue, ButtonGray } from "@/components/custom/button";
-import { Send } from 'lucide-react';
-import { DialogClose } from "@radix-ui/react-dialog";
-import useCRUD from "@/hooks/useCrud";
+import { Trash2 } from 'lucide-react';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger, } from "@/components/ui/tooltip"
+import useCRUD from "@/hooks/useCrud";
 import { toast } from "sonner";
 
-export const ModalEnviarProceso = ({procesoEnviar, fetchProcesos}) => {
+export const ModalEliminarProceso = ({procesoEliminar, fetchProcesos}) => {
   const {get, post, put, eliminar}=useCRUD();
   const [open, setOpen] = useState(false);
-  const enviarProceso = async() =>{
-    const data = {
-      nombre: procesoEnviar.nombre,
-      descripcion: procesoEnviar.descripcion,
-      entidad:{
-        codigoEntidad: procesoEnviar.entidad.codigoEntidad,
-      },
-      estado: "En evaluación"
-    };
+  const eliminarProceso = async() =>{
     try {
-      await post(`procesos/update/${procesoEnviar.codigoProceso}`, data);
-      console.log("Proceso enviado exitosamente");
-      toast.success("Proceso enviado exitosamente");
+      await eliminar(`procesos/delete/${procesoEliminar.codigoProceso}`);
+      console.log("Proceso eliminado con exito");
+      toast.success("Proceso eliminado con exito");
       fetchProcesos();
       setOpen(false);
     } catch (error) {
-      console.log("Error al enviar el proceso:", error)
-      toast.error("Error al enviar el proceso");
+      console.error('Error al eliminar el proceso:', error);
+      toast.error('Error al eliminar el proceso');
     }
+  }
+  const cancelar =()=>{
+    setOpen(false);
   }
 
   return (
     <>
       <TooltipProvider>
         <Tooltip>
-          <TooltipTrigger onClick={()=>{setOpen(true)}}><Send className="w-6 h-6" /></TooltipTrigger>
-          <TooltipContent><p>Enviar Proceso</p></TooltipContent>
+          <TooltipTrigger onClick={()=>{setOpen(true)}}><Trash2 className="w-6 h-6" /></TooltipTrigger>
+          <TooltipContent><p>Eliminar Proceso</p></TooltipContent>
         </Tooltip>
       </TooltipProvider>
       <Dialog className="text-lg" open={open} onOpenChange={setOpen}>
         <DialogTrigger />
         <DialogContent className="bg-white rounded-lg shadow-lg text-xl px-4 py-6 sm:px-8 sm:py-8"> 
           <DialogHeader>
-            <DialogTitle className="text-black text-center sm:text-left">Enviar proceso</DialogTitle>
+            <DialogTitle className="text-black text-center sm:text-left">Eliminar proceso</DialogTitle>
           </DialogHeader>
           
           {/* Mensaje principal ajustado para tamaños responsivos */}
           <h1 className="text-black text-lg text-center sm:text-left mt-4 sm:mt-2">
-            ¿Seguro que desea enviar este proceso para su evaluación?
+            ¿Seguro que desea eliminar este proceso?
           </h1>
 
           {/* Contenedor de botones con diseño responsivo */}
@@ -64,15 +59,15 @@ export const ModalEnviarProceso = ({procesoEnviar, fetchProcesos}) => {
             <div className="mt-4 flex flex-col sm:flex-row sm:justify-center gap-4">
               <ButtonGray
                 className="w-full sm:w-auto"
-                onClick={() => setOpen(false)}
+                onClick={() => cancelar()}
               >
                 Cancelar
               </ButtonGray>
               <ButtonBlue
                 className="w-full sm:w-auto"
-                onClick={() => enviarProceso()}
+                onClick={() => eliminarProceso()}
               >
-                Enviar
+                Eliminar
               </ButtonBlue>
             </div>
           </DialogFooter>
@@ -81,3 +76,4 @@ export const ModalEnviarProceso = ({procesoEnviar, fetchProcesos}) => {
     </>
   );
 };
+export default ModalEliminarProceso;

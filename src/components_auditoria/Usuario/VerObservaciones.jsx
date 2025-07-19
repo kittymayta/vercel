@@ -5,7 +5,7 @@ import {
     ResizablePanelGroup,
   } from "@/components/ui/resizable"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import CardMicro from '../../Auditor/components/Card';
+import CardMicro from '../Auditor/Card';
 import VerMicro from './VerObservacionesUser';
 import {
     Dialog,

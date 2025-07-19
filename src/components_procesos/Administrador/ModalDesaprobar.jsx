@@ -78,3 +78,4 @@ export const ModalDesaprobar = ({procesoDesaprobar, fetchProcesos}) => {
     </Dialog>
   );
 };
+export default ModalDesaprobar;

@@ -1,7 +1,7 @@
-import { ModalProcesosCoordinador } from "./components/ModalProceso";
-import { ModalEditarProceso } from "./components/ModalEditar";
-import { ModalEliminarProceso } from "./components/ModalEliminar";
-import { ModalEnviarProceso } from "./components/ModalEnviar";
+import { ModalProcesosCoordinador } from "../../../components_procesos/Coordinador/ModalProceso";
+import { ModalEditarProceso } from "../../../components_procesos/Coordinador/ModalEditar";
+import { ModalEliminarProceso } from "../../../components_procesos/Coordinador/ModalEliminar";
+import { ModalEnviarProceso } from "../../../components_procesos/Coordinador/ModalEnviar";
 import { useState, useEffect } from 'react';
 import {
   Select,
@@ -16,7 +16,7 @@ import {Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, Table
 import {Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious, } from "@/components/ui/pagination"
 import useCRUD from '@/hooks/useCrud';
 import { toast } from "sonner";
-import { ModalComentario } from "./components/Comentario";
+import { ModalComentario } from "../../../components_procesos/Coordinador/Comentario";
 
 const ProcesosCoordinador = () => {
   const { get, post, put, eliminar } = useCRUD();

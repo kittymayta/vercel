@@ -4,7 +4,7 @@ import {Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, Table
 import {Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious, } from "@/components/ui/pagination"
 import React, { useState, useEffect } from 'react';
 import { CirclePlus } from 'lucide-react';
-import ResponderPregunta from "../../AuditorInterno/components/responder";
+import ResponderPregunta from "./responder";
 
 
 
