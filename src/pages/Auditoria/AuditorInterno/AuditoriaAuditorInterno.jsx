@@ -57,7 +57,7 @@ const AuditoriaAuditorInterno = () => {
                   <p>No hay Auditorias Proceso por el Momento</p>
                 ) : (
                   micros.map((micro) => (
-                    <CardMicro micro={micro} onClick={()=>{setSelectedMicro(micro), setVisibleMicro(true)}}/>
+                    <CardMicro key={micro.codigoMicroAuditoria} micro={micro} onClick={()=>{setSelectedMicro(micro), setVisibleMicro(true)}}/>
                   ))
                 )}
                 </div>

@@ -150,7 +150,7 @@ const fetchLinks = async () => {
           <li>Tamaño máximo: ***mb.</li>
         </ul>
         <p className="mb-4 text-black text-left">
-          Una vez que tenga su archivo listo haga clic en el botón "Subir archivo" a continuación.
+        Una vez que tenga su archivo listo haga clic en el botón {"\"Subir archivo\""} a continuación.
         </p>
         </div>
         )}

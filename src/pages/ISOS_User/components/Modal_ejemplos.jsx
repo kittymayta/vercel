@@ -120,13 +120,24 @@ import {
                                         <span className="font-semibold">Lista Documentos {titulo == "Ejemplos" && "de Ejemplo"}</span>
                                     </div>
                                     <ScrollArea className="w-full rounded-md h-full">
-                                        {archivos.length === 0 ? (
-                                            <h1>No hay archivos disponibles.</h1>
-                                            ) : (
-                                            archivos.map((archivo) => (
-                                                <ButtonDocument Nombre={titulo === "Ejemplos" ? archivo.nombreEjemplo : archivo.nombreDocumento} onClick={()=>handleOpenDocument(`http://localhost:23731/api/file/obtener/${titulo === "Ejemplos" ? archivo.nombreEjemplo : archivo.nombreDocumento}`)}/>
-                                            ))
-                                        )}
+                                    {archivos.length === 0 ? (
+                                        <h1>No hay archivos disponibles.</h1>
+                                    ) : (
+                                        archivos.map((archivo) => (
+                                        <ButtonDocument
+                                            key={titulo === "Ejemplos" ? archivo.codigoEjemplo : archivo.nombreDocumento}
+                                            Nombre={titulo === "Ejemplos" ? archivo.nombreEjemplo : archivo.nombreDocumento}
+                                            onClick={() =>
+                                            handleOpenDocument(
+                                                `http://localhost:23731/api/file/obtener/${
+                                                titulo === "Ejemplos"
+                                                    ? archivo.nombreEjemplo
+                                                    : archivo.nombreDocumento
+                                                }`
+                                            )}
+                                        />
+                                        ))
+                                    )}
                                     </ScrollArea>
                                 </div>
                             </ResizablePanel>
@@ -139,9 +150,13 @@ import {
                                     <ScrollArea className="w-full rounded-md h-full">
                                         {links.length === 0 ? (
                                             <h1>No hay links disponibles.</h1>
-                                            ) : (
+                                        ) : (
                                             links.map((link) => (
-                                                <ButtonLink Enlace={link.link} onClick={() => window.open(`${link.link}`, "_blank")}/>
+                                            <ButtonLink
+                                                key={link.codigoTipoLink}
+                                                Enlace={link.link}
+                                                onClick={() => window.open(`${link.link}`, "_blank")}
+                                            />
                                             ))
                                         )}
                                     </ScrollArea>

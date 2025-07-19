@@ -97,20 +97,21 @@ const VerAuditoria = () => {
                                         <TableCell colSpan="6" className="text-center">No hay auditorias que coincidan con los filtros.</TableCell>
                                     </TableRow>
                                     ) : (
-                                    auditoriasFiltradas.slice(startIndex, endIndex).map((auditoria) => (
-                                        <TableRow>
-                                            <TableCell>{auditoria.codigoAuditoria}</TableCell>
-                                            <TableCell className="max-w-[300px]">{auditoria.nombreAuditoria}</TableCell>
-                                            <TableCell>{auditoria.usuario.nombreUsuario} {auditoria.usuario.apellidoPat} {auditoria.usuario.apellidoMat}</TableCell>
-                                            <TableCell>{auditoria.normaIso.nombreNormaIso}</TableCell>
-                                            <TableCell>{getEstado(auditoria.codigoEstadoAuditoria)}</TableCell>
-                                            <TableCell>
+                                        auditoriasFiltradas.slice(startIndex, endIndex).map((auditoria) => (
+                                            <TableRow key={auditoria.codigoAuditoria}>
+                                              <TableCell>{auditoria.codigoAuditoria}</TableCell>
+                                              <TableCell className="max-w-[300px]">{auditoria.nombreAuditoria}</TableCell>
+                                              <TableCell>{auditoria.usuario.nombreUsuario} {auditoria.usuario.apellidoPat} {auditoria.usuario.apellidoMat}</TableCell>
+                                              <TableCell>{auditoria.normaIso.nombreNormaIso}</TableCell>
+                                              <TableCell>{getEstado(auditoria.codigoEstadoAuditoria)}</TableCell>
+                                              <TableCell>
                                                 {auditoria.codigoEstadoAuditoria === 2 || auditoria.codigoEstadoAuditoria === 3 ? (
-                                                    <ModalObservaciones auditoria={auditoria} />
+                                                  <ModalObservaciones auditoria={auditoria} />
                                                 ) : null}
-                                            </TableCell>
-                                        </TableRow>
-                                    )))
+                                              </TableCell>
+                                            </TableRow>
+                                          ))
+                                    )
                                 )
                             }
                         </TableBody>
