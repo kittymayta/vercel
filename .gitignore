@@ -1,0 +1,14 @@
+# Archivos de Next.js a ignorar
+.next/
+node_modules/
+out/
+
+# Archivos de entorno
+.env*
+.env.local
+
+# Archivos del sistema
+.DS_Store
+
+# Logs
+*.log
