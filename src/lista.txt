@@ -1,0 +1,175 @@
+Listado de rutas de carpetas
+El n£mero de serie del volumen es D430-E350
+C:.
+³   lista.txt
+³   middleware.js
+³   
+ÃÄÄÄcomponents
+³   ÃÄÄÄcustom
+³   ³       alert.jsx
+³   ³       button.jsx
+³   ³       cardsDocuLink.jsx
+³   ³       layout.jsx
+³   ³       sidebar.jsx
+³   ³       table.jsx
+³   ³       
+³   ÀÄÄÄui
+³           alert-dialog.jsx
+³           button.jsx
+³           calendar.jsx
+³           card.jsx
+³           carousel.jsx
+³           collapsible.jsx
+³           command.jsx
+³           dialog.jsx
+³           dropdown-menu.jsx
+³           input.jsx
+³           label.jsx
+³           pagination.jsx
+³           popover.jsx
+³           resizable.jsx
+³           scroll-area.jsx
+³           select.jsx
+³           separator.jsx
+³           sheet.jsx
+³           sidebar.jsx
+³           skeleton.jsx
+³           sonner.jsx
+³           table.jsx
+³           tooltip.jsx
+³           
+ÃÄÄÄcomponents_auditoria
+³   ÃÄÄÄAdministrador
+³   ³       ModalAsignar.jsx
+³   ³       ModalCrear.jsx
+³   ³       ModalVer.jsx
+³   ³       
+³   ÃÄÄÄAuditor
+³   ³       Card.jsx
+³   ³       creacion.jsx
+³   ³       ModalAudi.jsx
+³   ³       ModalGestion.jsx
+³   ³       verMicro.jsx
+³   ³       
+³   ÃÄÄÄAuditorInterno
+³   ³       responder.jsx
+³   ³       tarjeta.jsx
+³   ³       verAuditoria.jsx
+³   ³       
+³   ÀÄÄÄUsuario
+³           ModalShdcn.jsx
+³           VerObservaciones.jsx
+³           VerObservacionesUser.jsx
+³           
+ÃÄÄÄcomponents_isos_admin
+³       descripcion_intro.jsx
+³       image.jsx
+³       imagen_intro.jsx
+³       Modal_contenidoSubitem.jsx
+³       Modal_documentacionSubitem.jsx
+³       Modal_editar_item.jsx
+³       Modal_editar_subitem.jsx
+³       Modal_example.jsx
+³       Modal_interpretacion.jsx
+³       Modal_nuevo_item.jsx
+³       Modal_nuevo_subitem.jsx
+³       NuevaImagen.jsx
+³       titulo_intro.jsx
+³       video_intro.jsx
+³       
+ÃÄÄÄcomponents_isos_user
+³       carrusel.jsx
+³       Modal_contenidoSubitem_us.jsx
+³       Modal_ejemplos.jsx
+³       Modal_interpretacionSubitem_Us.jsx
+³       
+ÃÄÄÄcomponents_procesos
+³   ÃÄÄÄAdministrador
+³   ³       Comentario.jsx
+³   ³       ModalAprobar.jsx
+³   ³       ModalDesaprobar.jsx
+³   ³       
+³   ÀÄÄÄCoordinador
+³           Comentario.jsx
+³           ModalEditar.jsx
+³           ModalEliminar.jsx
+³           ModalEnviar.jsx
+³           ModalProceso.jsx
+³           
+ÃÄÄÄcomponents_users
+³   ÀÄÄÄusers
+³           Modal.jsx
+³           ModalEditar.jsx
+³           ModalEliminar.jsx
+³           ModalGuardar.jsx
+³           
+ÃÄÄÄhooks
+³       getUser.jsx
+³       use-mobile.jsx
+³       useCrud.jsx
+³       
+ÃÄÄÄlib
+³       utils.js
+³       
+ÃÄÄÄpages
+³   ³   index.jsx
+³   ³   RoutesPages.js
+³   ³   _app.js
+³   ³   _document.js
+³   ³   
+³   ÃÄÄÄapi
+³   ³   ³   hello.js
+³   ³   ³   
+³   ³   ÀÄÄÄauth
+³   ³           [...nextauth].js
+³   ³           
+³   ÃÄÄÄAuditoria
+³   ³   ÃÄÄÄAdministrador
+³   ³   ³       AuditoriaAdmi.jsx
+³   ³   ³       AuditoriaSolicitudes.jsx
+³   ³   ³       
+³   ³   ÃÄÄÄAuditor
+³   ³   ³       AuditoriaAudi.jsx
+³   ³   ³       
+³   ³   ÃÄÄÄAuditorInterno
+³   ³   ³       AuditoriaAuditorInterno.jsx
+³   ³   ³       
+³   ³   ÀÄÄÄUsuario
+³   ³           AuditoriaUsuario.jsx
+³   ³           VerAuditoriaUsuario.jsx
+³   ³           
+³   ÃÄÄÄdashboard
+³   ³       home.jsx
+³   ³       
+³   ÃÄÄÄISOS_Admin
+³   ³       iso_archivos_admin.jsx
+³   ³       iso_intro_admin.jsx
+³   ³       
+³   ÃÄÄÄISOS_User
+³   ³       iso_intro_usuario.jsx
+³   ³       iso_items_usuario.jsx
+³   ³       
+³   ÃÄÄÄlogin
+³   ³       login.jsx
+³   ³       
+³   ÃÄÄÄmyAcount
+³   ³       miCuenta.jsx
+³   ³       
+³   ÃÄÄÄProcesos
+³   ³   ÃÄÄÄAdministrador
+³   ³   ³       procesosAdmi.jsx
+³   ³   ³       
+³   ³   ÀÄÄÄCoordinador
+³   ³           procesosCordi.jsx
+³   ³           
+³   ÀÄÄÄusers
+³           usuarios_admin.jsx
+³           
+ÃÄÄÄpublic
+³   ÀÄÄÄfonts
+³           GeistMonoVF.woff
+³           GeistVF.woff
+³           
+ÀÄÄÄstyles
+        globals.css
+        
