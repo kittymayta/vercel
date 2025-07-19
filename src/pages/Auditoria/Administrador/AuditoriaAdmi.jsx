@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
-import ModalCrear from '../Administrador/components/ModalCrear';
+import ModalCrear from '../../../components_auditoria/Administrador/ModalCrear';
 import useCRUD from '@/hooks/useCrud';
 import {
   Table,

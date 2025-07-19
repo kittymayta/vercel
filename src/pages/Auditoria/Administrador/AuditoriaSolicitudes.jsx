@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'; 
-import ModalAsignar from '../Administrador/components/ModalAsignar';
-import ModalVer from '../Administrador/components/ModalVer';
+import ModalAsignar from '../../../components_auditoria/Administrador/ModalAsignar';
+import ModalVer from '../../../components_auditoria/Administrador/ModalVer';
 import useCRUD from '@/hooks/useCrud';
 import {Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow, } from "@/components/custom/table"
 import {Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious, } from "@/components/ui/pagination"
